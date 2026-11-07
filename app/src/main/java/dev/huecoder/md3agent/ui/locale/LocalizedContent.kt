@@ -10,6 +10,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalResources
+import androidx.compose.ui.unit.LayoutDirection
+import androidx.compose.ui.platform.LocalLayoutDirection
 
 @Composable
 fun LocalizedContent(language: AppLanguage, content: @Composable () -> Unit) {
@@ -19,6 +21,7 @@ fun LocalizedContent(language: AppLanguage, content: @Composable () -> Unit) {
         LocalContext provides localized,
         LocalResources provides localized.resources,
         LocalConfiguration provides localized.resources.configuration,
+        LocalLayoutDirection provides if (language.locale.language == "ar") LayoutDirection.Rtl else LayoutDirection.Ltr,
         content = content,
     )
 }
