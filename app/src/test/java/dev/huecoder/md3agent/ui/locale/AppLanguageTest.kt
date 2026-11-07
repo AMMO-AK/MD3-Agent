@@ -25,10 +25,10 @@ class AppLanguageTest {
 
     @Test
     fun `stepping wraps around the list`() {
-        assertEquals(AppLanguage.ENGLISH, AppLanguage.ARABIC.next(1))
+        assertEquals(AppLanguage.RUSSIAN, AppLanguage.ARABIC.next(1))
         assertEquals(AppLanguage.GERMAN, AppLanguage.ARABIC.next(-1))
         assertEquals(AppLanguage.ENGLISH, AppLanguage.RUSSIAN.next(1))
-        assertEquals(AppLanguage.GERMAN, AppLanguage.RUSSIAN.next(-1))
+        assertEquals(AppLanguage.ARABIC, AppLanguage.RUSSIAN.next(-1))
         assertEquals(AppLanguage.ARABIC, AppLanguage.GERMAN.next(1))
     }
 }
