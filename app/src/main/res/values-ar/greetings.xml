@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="greetings_any">
+        <item>كيف يمكنني مساعدتك؟</item><item>ما الذي يشغل بالك؟</item><item>ما الذي نعمل عليه اليوم؟</item><item>اسألني أي شيء</item><item>من أين نبدأ؟</item><item>ماذا تحتاج؟</item><item>أنا جاهز عندما تكون مستعداً</item><item>ما خطتنا؟</item><item>هل لديك سؤال؟</item><item>لننجز شيئاً مفيداً</item>
+    </string-array>
+    <string-array name="greetings_morning">
+        <item>صباح الخير! كيف أساعدك؟</item><item>صباح النور! ما خطة اليوم؟</item><item>يوم جديد وأفكار جديدة؟</item><item>من أين نبدأ هذا الصباح؟</item><item>صباح الخير! ماذا تحتاج؟</item>
+    </string-array>
+    <string-array name="greetings_day">
+        <item>نهارك سعيد! كيف أساعدك؟</item><item>كيف يسير يومك؟</item><item>ما الذي ننجزه اليوم؟</item><item>هل يمكنني مساعدتك في شيء؟</item>
+    </string-array>
+    <string-array name="greetings_evening">
+        <item>مساء الخير! كيف أساعدك؟</item><item>كيف كان يومك؟</item><item>ما الذي يدور في بالك هذا المساء؟</item><item>ماذا ننجز الليلة؟</item>
+    </string-array>
+    <string-array name="greetings_night">
+        <item>ما زلت مستيقظاً؟ كيف أساعدك؟</item><item>أفكار آخر الليل؟</item><item>هل تحتاج إلى مساعدة؟</item><item>ما خطتك لهذه الليلة؟</item>
+    </string-array>
+</resources>
