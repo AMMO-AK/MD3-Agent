@@ -9,6 +9,7 @@ import android.os.LocaleList
 import java.util.Locale
 
 enum class AppLanguage(val tag: String, val nativeName: String) {
+    ARABIC("ar", "العربية"),
     RUSSIAN("ru", "Русский"),
     ENGLISH("en", "English"),
     SPANISH("es", "Español"),
