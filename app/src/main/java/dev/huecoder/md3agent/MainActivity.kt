@@ -7,11 +7,15 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.ui.platform.LocalLayoutDirection
+import androidx.compose.ui.unit.LayoutDirection
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import dev.huecoder.md3agent.ui.avatar.ProvideAgentLook
 import dev.huecoder.md3agent.ui.haptics.ProvideHaptics
 import dev.huecoder.md3agent.ui.keyboard.KeyboardGuard
 import dev.huecoder.md3agent.ui.locale.AppLocale
+import dev.huecoder.md3agent.ui.locale.AppLanguage
 import dev.huecoder.md3agent.ui.navigation.AppNavHost
 import dev.huecoder.md3agent.ui.navigation.LaunchTarget
 import dev.huecoder.md3agent.ui.theme.AssistantTheme
@@ -33,6 +37,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             val chatToOpen by pendingChatId.collectAsStateWithLifecycle()
             val target by pendingTarget.collectAsStateWithLifecycle()
+            val layoutDirection = if (AppLocale.current(this) == AppLanguage.ARABIC) LayoutDirection.Rtl else LayoutDirection.Ltr
+            CompositionLocalProvider(LocalLayoutDirection provides layoutDirection) {
             AssistantTheme {
                 ProvideAgentLook {
                     ProvideHaptics {
@@ -45,6 +51,7 @@ class MainActivity : ComponentActivity() {
                         )
                     }
                 }
+            }
             }
         }
     }
