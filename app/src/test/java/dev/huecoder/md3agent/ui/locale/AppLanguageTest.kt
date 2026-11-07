@@ -7,6 +7,7 @@ import java.util.Locale
 class AppLanguageTest {
     @Test
     fun `the system language picks its twin and anything else falls back to english`() {
+        assertEquals(AppLanguage.ARABIC, AppLanguage.of(Locale.forLanguageTag("ar-MA")))
         assertEquals(AppLanguage.RUSSIAN, AppLanguage.of(Locale.forLanguageTag("ru-RU")))
         assertEquals(AppLanguage.ENGLISH, AppLanguage.of(Locale.forLanguageTag("en-GB")))
         assertEquals(AppLanguage.ENGLISH, AppLanguage.of(Locale.forLanguageTag("fr-FR")))
@@ -24,8 +25,10 @@ class AppLanguageTest {
 
     @Test
     fun `stepping wraps around the list`() {
+        assertEquals(AppLanguage.ENGLISH, AppLanguage.ARABIC.next(1))
+        assertEquals(AppLanguage.GERMAN, AppLanguage.ARABIC.next(-1))
         assertEquals(AppLanguage.ENGLISH, AppLanguage.RUSSIAN.next(1))
         assertEquals(AppLanguage.GERMAN, AppLanguage.RUSSIAN.next(-1))
-        assertEquals(AppLanguage.RUSSIAN, AppLanguage.GERMAN.next(1))
+        assertEquals(AppLanguage.ARABIC, AppLanguage.GERMAN.next(1))
     }
 }
