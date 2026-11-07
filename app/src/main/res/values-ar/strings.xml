@@ -89,7 +89,7 @@
     <string name="settings_reminders">التذكيرات</string>
     <string name="settings_reminders_none">لا توجد تذكيرات مجدولة</string>
     <plurals name="settings_reminders_upcoming">
-        <item quantity="one">تذكير قادم واحد</item>
+        <item quantity="one">%d تذكير قادم</item>
         <item quantity="other">%d تذكيرات قادمة</item>
     </plurals>
     <string name="reminders_hint">ينشئ المساعد هذه التذكيرات عندما تطلب منه تذكيرك بشيء. ستصلك رسالة إشعار في الوقت المحدد، والضغط عليها يفتح المحادثة التي أُنشئ منها التذكير.</string>
@@ -218,7 +218,7 @@
     <string name="overlay_open_in_app">فتح in app</string>
     <string name="chat_meta_duration_seconds">%1$.1f ثانية</string>
     <string name="chat_meta_duration_minutes">%1$d دقيقة و%2$02d ثانية</string>
-    <string name="chat_meta_usage"> ↑ %1$s ↓ %2$s</string>
+    <string name="chat_meta_usage">الاستهلاك: ↑ %1$s ↓ %2$s</string>
     <string name="chat_meta_cached">من الذاكرة المؤقتة %1$s</string>
     <string name="chat_meta_tokens_thousands">%1$.1f ألف</string>
     <string name="chat_copy">نسخ</string>
@@ -230,8 +230,8 @@
     <string name="chat_edit_cancel">إلغاء التعديل</string>
     <string name="chat_version_previous">السابق الإصدار</string>
     <string name="chat_version_next">التالي الإصدار</string>
-    <string name="chat_version_position"> %1$d/%2$d</string>
-    <string name="chat_context_label"> %1$s/%2$s</string>
+    <string name="chat_version_position">الإصدار %1$d من %2$d</string>
+    <string name="chat_context_label">السياق %1$s من %2$s</string>
     <string name="chat_context_description">السياق: %1$s من أصل %2$s رمزاً.</string>
     <string name="chat_context_title">السياق window</string>
     <string name="chat_context_of">من %1$s</string>
@@ -249,7 +249,7 @@
     <string name="chat_context_limit_label">الرموز, فارغ for تلقائي</string>
     <string name="chat_context_limit_invalid">استخدم رقماً مثل 256k أو 262144.</string>
     <string name="chat_context_limit_placeholder"> 256k</string>
-    <string name="chat_context_percent"> %1$d%%</string>
+    <string name="chat_context_percent">نسبة السياق %1$d%%</string>
     <string name="chat_scroll_to_bottom">تمرير to للأسفل</string>
     <string name="chat_attach_file">إرفاق file</string>
     <string name="chat_attach_take_photo">Take صورة</string>
@@ -296,7 +296,7 @@
     <string name="chat_tool_weather">الطقس %1$s</string>
     <string name="chat_tool_reading_screen">قراءة the الشاشة</string>
     <string name="chat_tool_screen">الشاشة</string>
-    <string name="chat_tool_quoted"> «%1$s»</string>
+    <string name="chat_tool_quoted">اقتباس: «%1$s»</string>
     <string name="settings_voice">الصوت</string>
     <string name="settings_voice_summary">%1$s · قراءة الردود %2$s</string>
     <string name="settings_voice_no_provider">لا الصوت مزوّد</string>
@@ -382,7 +382,7 @@
     <string name="tools_fetch_backend_custom_hint">أي واجهة قراءة API تضع عنوان الصفحة في الرابط. يُستبدل {url} بعنوان الصفحة؛ وإذا لم يوجد، يُضاف العنوان في النهاية.</string>
     <string name="tools_fetch_api_key">API مفتاح (optional)</string>
     <string name="tools_fetch_custom_url">رابط خدمة القراءة</string>
-    <string name="tools_fetch_custom_url_placeholder"> https://reader.example.com/{url}</string>
+    <string name="tools_fetch_custom_url_placeholder">رابط خدمة القراءة: https://reader.example.com/{url}</string>
     <string name="tools_list_files_title">استعراض المجلدات</string>
     <string name="tools_list_files_summary">يعرض محتويات المجلد.</string>
     <string name="tools_read_file_title">قراءة files</string>
@@ -635,7 +635,7 @@
         <item quantity="other">تم تحديد %d عناصر</item>
     </plurals>
     <plurals name="home_delete_chats_title">
-        <item quantity="one">هل تريد حذف محادثة واحدة؟</item>
+        <item quantity="one">هل تريد حذف %d محادثة؟</item>
         <item quantity="other">هل تريد حذف %d محادثات؟</item>
     </plurals>
     <string name="common_expanded">موسّع</string>
@@ -656,7 +656,7 @@
     <string name="playground_hint">Grab the shapes, throw them up و away</string>
     <string name="about_logo_taps_left">متبقٍ %1$d</string>
     <string name="appearance_haptic_strength">الاهتزاز strength</string>
-    <string name="appearance_haptic_strength_value"> %1$d%%</string>
+    <string name="appearance_haptic_strength_value">قوة الاهتزاز %1$d%%</string>
     <string name="about_version">الإصدار %1$s (%2$d)</string>
     <string name="about_check_updates">تحقق for التحديثات</string>
     <string name="about_update_download">تنزيل update</string>
@@ -779,7 +779,7 @@
     <string name="phone_use_sound_mouse">نقرة فأرة</string>
     <string name="phone_use_sound_volume">مستوى الصوت</string>
     <string name="phone_use_sound_preview">معاينة</string>
-    <string name="phone_use_percent"> %1$d%%</string>
+    <string name="phone_use_percent">النسبة %1$d%%</string>
     <string name="phone_use_double_tap">النقر مرتين على «%1$s»</string>
     <string name="phone_use_scroll_to">البحث عن «%1$s»</string>
     <string name="phone_use_swipe_any">السحب</string>
@@ -930,7 +930,7 @@
     <string name="assistant_invoke_grid_hint">نقاط نصفية فوق التوهج، كما في Gemini.</string>
     <string name="assistant_invoke_thickness">السماكة</string>
     <string name="assistant_invoke_duration">المدة</string>
-    <string name="assistant_invoke_percent"> %1$d%%</string>
+    <string name="assistant_invoke_percent">النسبة %1$d%%</string>
     <string name="assistant_invoke_seconds">%1$.1f ثانية</string>
     <string name="assistant_invoke_system_title">إطار أبيض عند الحواف</string>
     <string name="assistant_invoke_system_hint">Some firmwares draw it for third-party assistants while the system reads the الشاشة. It goes away if استخدام text from الشاشة is off in the system assistant الإعدادات, but then the agent does not get the الشاشة text.</string>
