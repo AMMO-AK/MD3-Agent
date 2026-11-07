@@ -19,7 +19,7 @@ jobs:
           distribution: temurin
           java-version: '17'
           cache: gradle
-      - name: Build and test debug APK
+      - name: Run locale tests and build the APK
         run: ./gradlew --no-daemon testDebugUnitTest assembleDebug
       - name: Upload APK
         uses: actions/upload-artifact@v4
